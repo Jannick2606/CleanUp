@@ -13,7 +13,7 @@ namespace CleanUp
         {
 
         }
-        public static void LISTAllServices()
+        public static void ListAllServices()
         {
             ManagementObjectSearcher windowsServicesSearcher = new ManagementObjectSearcher("root\\cimv2", "select * from Win32_Service");
             ManagementObjectCollection objectCollection = windowsServicesSearcher.Get();
@@ -34,7 +34,7 @@ namespace CleanUp
                 Console.WriteLine("---------------------------------------");
             }
         }
-        public static void test()
+        public static void Test()
         {
             ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
             ManagementObjectSearcher searcher = new ManagementObjectSearcher(wql);
@@ -47,7 +47,7 @@ namespace CleanUp
             }
 
         }
-        public static void testhest()
+        public static void TestHest()
         {
             Console.WriteLine("testhest start");
             ManagementScope scope = new ManagementScope("\\\\.\\ROOT\\cimv2");
@@ -73,7 +73,7 @@ namespace CleanUp
 
 
         }
-        public static void hovedLager()
+        public static void HovedLager()
         {
             ObjectQuery wql = new ObjectQuery("SELECT * FROM Win32_OperatingSystem");
             ManagementObjectSearcher searcher = new ManagementObjectSearcher(wql);
@@ -88,7 +88,7 @@ namespace CleanUp
             }
 
         }
-        public static void CPU()
+        public static void Cpu()
         {
             ManagementObjectSearcher searcher = new ManagementObjectSearcher("select * from Win32_PerfFormattedData_PerfOS_Processor");
             foreach (ManagementObject obj in searcher.Get())

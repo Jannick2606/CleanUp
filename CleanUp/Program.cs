@@ -14,12 +14,12 @@ namespace CleanUp
         {
             Data.GetDiskMetadata();
             Data.GetHardDiskSerialNumber();
-            Logic.CPU();
-            Logic.hovedLager();
-            Logic.test();
-            Logic.testhest();
+            Logic.Cpu();
+            Logic.HovedLager();
+            Logic.Test();
+            Logic.TestHest();
             Console.WriteLine("process søgning");
-            Logic.LISTAllServices();
+            Logic.ListAllServices();
             Console.ReadKey();
 
         } //slut main
